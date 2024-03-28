@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #faf7f2;
+  font-family: Roboto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topHeaderContainer {
+  margin: 0 auto;
+  max-width: 75rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.topHeader {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  font-size: 30px;
+  font-weight: 500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.topHeaderList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.topHeaderContactDetails {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.topHeaderContactDetailsSocials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.topHeaderContactButton {
+  background-color: #262b24;
+  padding: 0.7rem 1.7rem;
+  border: none;
+}
+
+.topHeaderContactButton a {
+  text-decoration: none;
+  background-color: #262b24;
+  padding: 0;
+  color: #faf7f2;
 }
