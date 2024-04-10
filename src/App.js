@@ -30,7 +30,6 @@ function Logo() {
 function NavBar() {
   return (
     <ul className="topHeaderList">
-      <li>HOME</li>
       <li>ABOUT</li>
       <li>SERVICES</li>
       <li>COURSE</li>
@@ -58,7 +57,7 @@ function ContactDetails() {
 function FirstHeroSection() {
   return (
     <div className="heroSection">
-      <div className="herSectionContainer">
+      <div className="heroSectionContainer">
         <LeftColumnHeroSection />
         <RightColumnHeroSection />
       </div>
@@ -68,7 +67,7 @@ function FirstHeroSection() {
 
 function LeftColumnHeroSection() {
   return (
-    <div>
+    <div className="leftColumnSection">
       <LeftColumnHeroSectionText />
       <LeftColumnHeroSectionButton />
     </div>
@@ -76,21 +75,36 @@ function LeftColumnHeroSection() {
 }
 
 function RightColumnHeroSection() {
-  return <img src="/reading.jpg" alt="women reading" />;
+  return (
+    <div className="rightColumnImageDiv">
+      <img
+        src="/reading.jpg"
+        alt="women reading"
+        className="rightColumnImage"
+      />
+    </div>
+  );
 }
 
 function LeftColumnHeroSectionText() {
   return (
-    <div>
-      <h2>I'am here to shine up your social media</h2>
-      <h4>awydgauywgdauywgduaywgduawydgauywgduaywgduaywdguawydgauwydawd</h4>
+    <div className="leftColumnHeroSection">
+      <h2>
+        I'am here to shine up <br></br> your social media
+      </h2>
+      <h4>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin finibus
+        turpis mi. Donec non efficitur sapien. Maecenas posuere ipsum id
+        tincidunt dapibus. Maecenas tortor diam, fermentum vel laoreet eu,
+        venenatis sit amet arcu.
+      </h4>
     </div>
   );
 }
 
 function LeftColumnHeroSectionButton() {
   return (
-    <button>
+    <button className="buttonLeftColumnHero">
       <a href="#">WHEN DO WE BEGIN?</a>
     </button>
   );

@@ -17,7 +17,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 0rem;
 }
 
 .logo {
@@ -64,4 +64,70 @@
   background-color: #262b24;
   padding: 0;
   color: #faf7f2;
+}
+
+.heroSectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 70px;
+  align-items: end;
+  padding: 20px 0px;
+}
+
+.rightColumnImageDiv {
+  flex: 1;
+}
+
+.rightColumnImage {
+  width: 350px;
+  height: 450px;
+  border-top-left-radius: 180px;
+  border-top-right-radius: 180px;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+}
+
+.leftColumnSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.leftColumnHeroSection {
+  h2 {
+    color: #262b24;
+    text-align: right;
+    font-size: 55px;
+    font-weight: 400;
+    max-width: 565px;
+  }
+
+  h4 {
+    color: #abaaa7;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 50px;
+    max-width: 565px;
+  }
+}
+
+.buttonLeftColumnHero {
+  background-color: #262b24;
+  padding: 0.8rem 1.7rem;
+  border: none;
+
+  a {
+    background-color: #262b24;
+    color: #faf7f4;
+    text-decoration: none;
+  }
 }
