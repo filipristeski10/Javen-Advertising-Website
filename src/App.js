@@ -1,11 +1,29 @@
 import "./App.css";
 
+const Services = [
+  {
+    name: "SOME MANAGEMENT",
+    image: "/scott-graham-5fNmWej4tAA-unsplash.jpg",
+  },
+
+  {
+    name: "FACEBOOK ADS",
+    image: "/myriam-jessier-eveI7MOcSmw-unsplash.jpg",
+  },
+
+  {
+    name: "COURSES",
+    image: "/kenny-eliason-Ak5c5VTch5E-unsplash.jpg",
+  },
+];
+
 function App() {
   return (
     <div className="App">
       <Header />
       <FirstHeroSection />
       <SecondHeroSection />
+      <ThirdSection />
     </div>
   );
 }
@@ -126,6 +144,42 @@ function SecondHeroSection() {
           </h4>
         </div>
       </div>
+    </div>
+  );
+}
+
+//This above is the second Hero Section of the website.
+
+function ThirdSection() {
+  return (
+    <div className="thirdSection">
+      <div className="thirdSectionContainer">
+        <h2>
+          Let me help you <br></br> skyrocket your social media presence
+        </h2>
+        <ServicesContainer />
+      </div>
+    </div>
+  );
+}
+
+function ServicesContainer() {
+  return (
+    <div className="thirdSectionServicesContainer">
+      {Services.map((eachservice) => (
+        <EachOneService service={eachservice} />
+      ))}
+    </div>
+  );
+}
+
+function EachOneService({ service }) {
+  const inlineStyles = {
+    backgroundImage: `url(${service.image})`,
+  };
+  return (
+    <div className="eachOneServiceBackgroundPicture" style={inlineStyles}>
+      <h2>{service.name}</h2>
     </div>
   );
 }
