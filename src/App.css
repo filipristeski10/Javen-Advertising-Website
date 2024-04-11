@@ -8,7 +8,7 @@
 
 .topHeaderContainer {
   margin: 0 auto;
-  max-width: 75rem;
+  max-width: 84rem;
 }
 
 .topHeader {
@@ -75,7 +75,7 @@
   justify-content: space-between;
   gap: 70px;
   align-items: end;
-  padding: 20px 0px;
+  padding: 20px 0px 100px 0px;
 }
 
 .rightColumnImageDiv {
@@ -129,5 +129,47 @@
     background-color: #262b24;
     color: #faf7f4;
     text-decoration: none;
+  }
+}
+
+/* This above is the main Hero Section*/
+
+.secondHeroSection {
+  background-color: #f6dfd3;
+  height: 550px;
+}
+
+.secondHeroSectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f6dfd3;
+
+  .secondHeroSectionText {
+    background-color: #f6dfd3;
+    margin-left: 50px;
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  h2 {
+    background-color: #f6dfd3;
+    color: #262b24;
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  h4 {
+    background-color: #f6dfd3;
+    color: #262b24;
+    font-size: 25px;
+    font-weight: 400;
   }
 }

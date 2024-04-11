@@ -5,6 +5,7 @@ function App() {
     <div className="App">
       <Header />
       <FirstHeroSection />
+      <SecondHeroSection />
     </div>
   );
 }
@@ -107,5 +108,24 @@ function LeftColumnHeroSectionButton() {
     <button className="buttonLeftColumnHero">
       <a href="#">WHEN DO WE BEGIN?</a>
     </button>
+  );
+}
+
+//This above is the first Main Hero Section of the Website
+
+function SecondHeroSection() {
+  return (
+    <div className="secondHeroSection">
+      <div className="secondHeroSectionContainer">
+        <div className="secondHeroSectionText">
+          <h2>MY MISSION</h2>
+          <h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            pulvinar maximus dapibus. Pellentesque nulla nibh, commodo in
+            interdum ac, efficitur vitae nunc
+          </h4>
+        </div>
+      </div>
+    </div>
   );
 }
