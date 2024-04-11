@@ -155,7 +155,7 @@ function ThirdSection() {
     <div className="thirdSection">
       <div className="thirdSectionContainer">
         <h2>
-          Let me help you <br></br> skyrocket your social media presence
+          Let us help you <br></br> skyrocket your social media presence
         </h2>
         <ServicesContainer />
       </div>
