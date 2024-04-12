@@ -17,6 +17,24 @@ const Services = [
   },
 ];
 
+const Clients = [
+  {
+    image: "pngegg.png",
+  },
+
+  {
+    image: "pngegg.png",
+  },
+
+  {
+    image: "pngegg.png",
+  },
+
+  {
+    image: "pngegg.png",
+  },
+];
+
 function App() {
   return (
     <div className="App">
@@ -24,6 +42,7 @@ function App() {
       <FirstHeroSection />
       <SecondHeroSection />
       <ThirdSection />
+      <WallOfFameSection />
     </div>
   );
 }
@@ -182,4 +201,28 @@ function EachOneService({ service }) {
       <h2>{service.name}</h2>
     </div>
   );
+}
+
+//This above is the fourth section of the website, services page.
+
+function WallOfFameSection() {
+  return (
+    <div className="wallOfFameSection">
+      <div className="wallOfFameSectionContainer">
+        <h2>Our Wall Of Fame</h2>
+        <div className="imagesContainer">
+          {Clients.map((ourclient) => (
+            <OurClients client={ourclient} />
+          ))}
+        </div>
+        <button>
+          <a href="#">TIME TO CLAIM YOUR SPOT!</a>
+        </button>
+      </div>
+    </div>
+  );
+}
+
+function OurClients({ client }) {
+  return <img src={client.image} alt="Each Client" className="eachImage"></img>;
 }

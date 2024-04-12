@@ -224,3 +224,52 @@
     margin-top: 60px;
   }
 }
+
+/*This above is the clients / testimonial section*/
+
+.wallOfFameSection {
+  background-color: #f4ddcf;
+}
+
+.wallOfFameSectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 75px 0px;
+  background-color: #f4ddcf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+
+  h2 {
+    color: #262b24;
+    font-weight: 400;
+    font-size: 35px;
+    background-color: #f4ddcf;
+  }
+
+  button {
+    background-color: #262b24;
+    padding: 15px 20px;
+    border: none;
+    a {
+      background-color: #262b24;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.imagesContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: #f4ddcf;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+}
+
+.eachImage {
+  width: 200px;
+  background-color: #f4ddcf;
+}
