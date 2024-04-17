@@ -273,3 +273,339 @@
   width: 200px;
   background-color: #f4ddcf;
 }
+
+/*This above is the Wall of fame section*/
+
+.AboutMeSectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+.rightColumnImage {
+  width: 320px;
+  height: 400px;
+  border: 12px solid #f6dfd3;
+}
+
+.AboutMeRighColumnHeroSection {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.RightColumnHeroSection {
+  h2 {
+    color: #262b24;
+    text-align: left;
+    font-size: 37px;
+    font-weight: 400;
+    max-width: 565px;
+  }
+
+  h4 {
+    color: #abaaa7;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 50px;
+    max-width: 565px;
+  }
+}
+
+.buttonLeftColumnHero {
+  padding: 15px 30px;
+  max-width: max-content;
+  margin-top: 50px;
+}
+
+/*This above is the about me section*/
+
+.KindWordsSection {
+  background-color: #262b24;
+  padding: 80px 0px;
+}
+
+.KindWordsSectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #262b24;
+
+  h2 {
+    color: white;
+    background-color: #262b24;
+    text-align: left;
+    font-size: 37px;
+    font-weight: 400;
+    max-width: 565px;
+  }
+
+  h3 {
+    color: white;
+    background-color: #262b24;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 50px;
+    font-style: italic;
+    margin-left: 100px;
+  }
+
+  h4 {
+    color: white;
+    background-color: #262b24;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 50px;
+    max-width: 565px;
+    margin-left: 550px;
+  }
+}
+
+/* This above is Kind Words Section*/
+
+.CatchUpOnTheBlogSection {
+  padding: 100px 0;
+}
+
+.CatchUpOnTheBlogSectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 50px;
+  h2 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+.EachBlogContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eachBlogPostImage {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+}
+
+.EachBlogPost {
+  h4 {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 15px;
+  }
+}
+
+/* This above is the blog posts section*/
+
+.ContactSection {
+  background-color: #f6dfd3;
+  padding: 100px 0;
+}
+
+.ContactSectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f6dfd3;
+}
+
+.ContactSectionContainerInside {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f6dfd3;
+}
+
+.leftColumnContactSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: #f6dfd3;
+}
+
+.rightColumnContactImage {
+  width: 280px;
+  height: 370px;
+  border: 12px solid #262b24;
+  border-radius: 200px 200px 0px 0px;
+  object-fit: cover;
+  overflow: hidden;
+  margin-left: 100px;
+}
+
+.leftColumnContactSection {
+  display: flex0;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 35px;
+    font-weight: 400;
+    background-color: #f6dfd3;
+  }
+
+  h4 {
+    font-size: 20px;
+    background-color: #f6dfd3;
+    font-weight: 350;
+  }
+}
+
+.rightColumnContactImageDiv {
+  flex: 1;
+  background-color: #f6dfd3;
+}
+
+.ContactForm {
+  max-width: max-content;
+  input {
+    padding: 20px 30px;
+    border: none;
+    font-size: 17px;
+  }
+
+  .ContactFormButton {
+    padding: 20px 30px;
+    background-color: #262b24;
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+  }
+}
+
+/*This above is the Contact Section*/
+
+.FooterSection {
+  margin: 65px 0;
+}
+
+.FooterSectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-size: 35px;
+    font-weight: 400;
+  }
+}
+
+.FooterMenuContainer {
+  max-width: 100%;
+  ul {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  li {
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    a {
+      text-decoration: underline;
+      color: #262b24;
+    }
+  }
+}
+
+.FooterPicturesContainer {
+  width: 100%;
+  display: flex;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 40px 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.EachImageDiv {
+  .EachImageInside {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+}
+
+.FirstBox {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  font-size: 20px;
+  h4 {
+    font-weight: 500;
+  }
+}
+
+.LowestFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  h4 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  img {
+    width: 30px;
+  }
+}
+
+.SocialMediaIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.PrivacyPolicy {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+.LastButtonDiv {
+  padding: 50px 0 0 0;
+}
+
+.LastButton {
+  padding: 15px 35px;
+  background-color: #8f6950;
+  font-size: 15px;
+  color: white;
+  border: none;
+  font-weight: 500;
+}
